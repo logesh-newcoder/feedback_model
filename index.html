@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Modal</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-content">
+            <h2 class="modal-header">
+                How was my frontend project and design? Give your review for my growth.
+            </h2>
+            <div class="button-container">
+                <!-- Use a single onclick function with a parameter -->
+                <button onclick="guessNumber(1)">1</button>
+                <button onclick="guessNumber(2)">2</button>
+                <button onclick="guessNumber(3)">3</button>
+                <button onclick="guessNumber(4)">4</button>
+                <button onclick="guessNumber(5)">5</button>
+                <button onclick="guessNumber(6)">6</button>
+                <button onclick="guessNumber(7)">7</button>
+                <button onclick="guessNumber(8)">8</button>
+                <button onclick="guessNumber(9)">9</button>
+                <button onclick="guessNumber(10)">10</button>
+            </div>
+            <div class="feedback">
+                <p id="feedback-text">Outstanding</p>
+            </div>
+            <button class="submit-button" onclick="submitFeedback()">Submit</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+/* Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(137, 43, 226, 0.39);
+    font-family: Arial, sans-serif;
+}
+
+/* Modal Container */
+.modal {
+    background-color: #0f0838;
+    color: white;
+    width: 70%;
+    max-width: 600px;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.modal-header {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+.feedback {
+    margin: 1rem 0;
+}
+
+#feedback-text {
+    border: 1px solid black;
+    font-size: 1.3rem;
+    padding: 0.8rem;
+    font-weight: bold;
+}
+
+.submit-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 780px) {
+    .modal {
+        width: 85%;
+    }
+
+    .modal-header {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .modal {
+        width: 90%;
+    }
+
+    .modal-header {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 0.3rem 0.7rem;
+        font-weight: 600;
+    }
+
+    #feedback-text {
+        font-size: 1rem;
+    }
+
+    .submit-button {
+        font-size: 0.9rem;
+    }
+}
